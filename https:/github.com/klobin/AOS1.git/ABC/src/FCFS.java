@@ -44,6 +44,8 @@ public class FCFS {
         System.out.println("\nAverage Turnaround Time: " + ((float) totalTurnAroundTime / (float) processes.size()));
         System.out.println("Average Waiting Time: " + ((float) totalWaitingTime / (float) processes.size()));
         System.out.println("Average Response Time: " + ((float) totalResponseTime / (float) processes.size()));
-        return new Stat((float) totalTurnAroundTime / (float) processes.size(), (float) totalResponseTime / (float) processes.size(), (float) totalWaitingTime / (float) processes.size());
+        return new Stat((float) totalTurnAroundTime / (float) processes.size(),
+                (float) totalResponseTime / (float) processes.size(),
+                (float) totalWaitingTime / (float) processes.size());
     }
 }
